@@ -52,3 +52,31 @@ p{
         font-size: 2.4rem;
     }
 }
+
+/* Links */
+a{
+    text-decoration: none;
+}
+
+.learnMoreLink{
+    color: var(--colorAccent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.learnMoreLink::after{
+    content: '-->';
+    margin-left: 5px;
+    transition: margin 0.25s;
+}
+
+.learnMoreLink:hover::after{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px){
+    .learnMoreLink{
+        font-size: 1.5rem;
+    }
+}
