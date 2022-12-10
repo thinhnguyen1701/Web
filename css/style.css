@@ -125,6 +125,22 @@ a{
     display: inline-block;
 }
 
-.listItem:nth-child(even){
+.listInline .listItem:nth-child(even){
     margin: 0 2rem;
+}
+
+.listTick{
+    list-style-image: url(/images/tick.svg);
+    margin: 3rem;
+}
+
+.listTick .listItem{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .listTick .listItem{
+        padding-left: 0;
+    }
 }
