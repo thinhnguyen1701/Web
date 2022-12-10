@@ -113,3 +113,18 @@ a{
         font-size: 1.2rem;
     }
 }
+
+/* Lists */
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--colorHeading);
+}
+
+.listInline .listItem{
+    display: inline-block;
+}
+
+.listItem:nth-child(even){
+    margin: 0 2rem;
+}
