@@ -106,6 +106,7 @@ a{
 
 .badgeSmall{
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px){
@@ -229,5 +230,111 @@ a{
 @media screen and (min-width: 1024px){
     .btn{
         font-size: 1.5rem;
+    }
+}
+
+/* Input */
+.searchEngine{
+    border: 0;
+    outline: 0;
+    color: var(--colorHeading);
+    font-size: 2rem;
+    flex-grow: 1;
+    border-radius: 30px;
+    padding: 1.5rem 1rem;
+}
+
+::placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+
+.inputGroup{
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 #ccc;
+    display: flex;
+}
+
+.inputGroup .btn{
+    margin: 5px;
+}
+
+@media screen and(min-width: 1024px){
+    .searchEngine{
+        font-size: 1.5rem;
+    }
+}
+
+/* Cards */
+.card{
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.cardHeader, .cardBody{
+    padding: 2rem 3rem;
+}
+
+.cardPrimary .cardHeader{
+    background-color: var(--colorPrimary);
+    color: white;
+}
+
+.cardSecondary .cardHeader{
+    background-color: var(--colorSecondary);
+    color: white;
+}
+
+.cardSecondary .badgeSecondary{
+    background-color: #02cdf1;
+}
+
+/* Plan */
+.planName{
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.planPrice{
+    font-size: 6rem;
+}
+
+.planBillingCycle{
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+
+.planDescription{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .listItem{
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px){
+    .planName{
+        font-size: 1.4rem;
+    }
+
+    .planPrice{
+        font-size: 5rem;
+    }
+    
+    .planBillingCycle{
+        font-size: 1.6rem;
+    }
+
+    .planDescription{
+        font-size: 1.7rem;
     }
 }
