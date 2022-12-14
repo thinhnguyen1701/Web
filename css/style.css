@@ -4,6 +4,7 @@
     --color-heading: #1b0760;
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
+    --border-radius:40px;
 }
 
 /* Typography */
@@ -58,20 +59,20 @@ a{
     text-decoration: none;
 }
 
-.link-arrow{
+.link--arrow{
     color: var(--color-accent);
     font-weight: bold;
     font-size: 2.4rem;
 }
 
 
-.link-arrow::after{
+.link--arrow::after{
     content: '-->';
     margin-left: 5px;
     transition: margin 0.15s;
 }
 
-.link-arrow:hover::after{
+.link--arrow:hover::after{
     margin-left: 10px;
 }
 
@@ -84,7 +85,7 @@ a{
 /* Badge */
 .badge{
     background: var(--color-primary);
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     color: white;
     font-size: 2rem;
     font-weight: 600;
@@ -92,15 +93,15 @@ a{
     white-space: nowrap;
 }
 
-.badge-small{
+.badge--small{
     font-size: 1.6rem;
 }
 
-.badge-primary{
+.badge--primary{
     background: var(--color-primary);
 }
 
-.badge-secondary{
+.badge--secondary{
     background: var(--color-secondary)
 }
 
@@ -114,3 +115,112 @@ a{
 }
 
 /* List */
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading);
+}
+
+.list--inline .list--item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--check{
+    list-style-image: url(/images/tick.svg);;
+    padding-left: 3rem;
+}
+
+.list--check .list--item{
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px){
+    .list--check .list--item{
+        margin-left: 0;
+    }
+}
+
+/* Icon */
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.icon--primary{
+    fill: var(--color-primary)
+}
+
+.icon-container{
+    align-items: center;
+    background: #f3f9fa;
+    border-radius: 100%;
+    display: inline-flex; /* It makes an incon stay inside the container */
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+/* Button */
+.btn{
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    border: 0;
+    border-radius: var(--border-radius);
+    color: var(--color-heading);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+
+.btn--primary{
+    border: 2px solid var(--color-heading);
+}
+
+.btn--primary:hover{
+    background-color: var(--color-heading);
+    color: white;
+}
+
+.btn--secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn--secondary:hover{
+    background-color: #00c9ec;
+}
+
+.btn--accent{
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.btn--block{
+    width: 100%;
+    /* display inline block */
+}
+
+@media screen and (min-width: 1024px){
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+
+/* Input */
+.input{
+    font-size: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: var(--border-radius);
+    color: var(--color-heading);
+    padding: 1.5rem 3.5rem;
+    outline: 0;
+}
+
+::placeholder{
+    color: #bab4cf;
+}
