@@ -1,0 +1,11 @@
+<div class="callouts">
+    <div class="grid grid--1x2">
+        <div class="callouts__description">
+            <h2 class="callouts__header">Ready to Get Started?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium officiis eligendi minima
+                reiciendis. Temporibus possimus et magnam quidem voluptate? Vel necessitatibus illo ipsam unde eius.
+            </p>
+        </div>
+        <a class="btn btn--secondary btn--stretch" href="#">get started</a>
+    </div>
+</div>
