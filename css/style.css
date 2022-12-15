@@ -152,14 +152,22 @@ a{
     fill: var(--color-primary)
 }
 
+.icon--white{
+    fill: white;
+}
+
 .icon-container{
     align-items: center;
     background: #f3f9fa;
     border-radius: 100%;
     display: inline-flex; /* It makes an incon stay inside the container */
-    height: 40px;
     justify-content: center;
-    width: 40px;
+    height: 60px;
+    width: 60px;
+}
+
+.icon-container--accent{
+    background-color: var(--color-accent);
 }
 
 /* Button */
@@ -185,6 +193,15 @@ a{
 .btn--primary:hover{
     background-color: var(--color-heading);
     color: white;
+}
+
+.btn__secondary{
+    background: var(--color-secondary);
+    color: white;
+}
+
+.btn__secondary:hover{
+    background: #00cdf1;
 }
 
 .btn--accent{
@@ -360,3 +377,92 @@ a{
     margin-right: 20px;
 }
 
+/* quote */
+.quote{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.quote__content{
+    font-style: italic;
+}
+
+.quote__content::before{
+    content: open-quote;
+}
+
+.quote__content::after{
+    content: close-quote;
+}
+
+.quote__image{
+    margin-right: 1rem;
+}
+
+.quote__author{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.quote__company{
+    color: var(--color-heading);
+    opacity: .4;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px){
+    .quote__content{
+        font-size: 2.4rem;
+    }
+}
+
+/* grid */
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width: 768px){
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .grid--1x3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Testimonial */
+.testimonial{
+    padding: 3rem;
+}
+
+.testimonial__container{
+    position: relative;
+    padding: 0 3rem;
+}
+
+.testimonial__icon{
+    position: absolute;
+    right: 0px;
+    top: 3rem;
+}
+
+.testimonial__image{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .testimonial .quote{
+        margin: 5rem 0 0 6rem;
+    }
+
+    .testimonial__container{
+        padding: 0;
+    }
+    .testimonial__icon{
+        right: -30px;
+    }
+}
