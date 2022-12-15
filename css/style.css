@@ -316,6 +316,7 @@ a{
 
 .plan--popular .card__header::before{
     content: url(/images/popular.svg);
+    display: inline-block;
     position:absolute;
     right: 5%;
     top: -6px;
@@ -344,3 +345,18 @@ a{
         font-size: 1.7rem;
     }
 }
+
+/* media */
+.media{
+    display: flex;
+}
+
+.media__title{
+    margin: 0;
+}
+
+.media__image{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
