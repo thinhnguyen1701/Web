@@ -218,11 +218,11 @@ a{
 }
 
 .input-group{
-    margin: 20px;
-    max-width: 690px;
     border-radius: var(--border-radius);
     box-shadow: 0 0 40px 5px lightgrey;
     display: flex;
+    margin: 20px;
+    max-width: 690px;
 }
 
 .input-group .input{
@@ -242,9 +242,9 @@ a{
 
 /* Card */
 .card{
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 lightgrey;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -298,8 +298,8 @@ a{
 
 .plan__description{
     display: block;
-    letter-spacing: 1px;
     font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .card__header .badge{
