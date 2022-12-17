@@ -192,6 +192,13 @@ a {
     white-space: nowrap;
 }
 
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
 .btn--primary {
     border: 2px solid var(--color-heading);
 }
@@ -233,7 +240,6 @@ a {
 /* Input */
 .input {
     border-radius: var(--border-radius);
-    border: 1px solid lightgrey;
     color: var(--color-heading);
     font-size: 2rem;
     outline: 0;
@@ -245,11 +251,9 @@ a {
 }
 
 .input-group {
+    border: 1px solid lightgrey;
     border-radius: var(--border-radius);
-    box-shadow: 0 0 40px 5px lightgrey;
     display: flex;
-    margin: 20px;
-    max-width: 690px;
 }
 
 .input-group .input {
@@ -687,4 +691,30 @@ a {
         text-align: left;
         align-self: center;
     }
+}
+
+/* Domain block */
+.block-domain .input-group{
+    box-shadow: 0 0 40px 5px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
 }
