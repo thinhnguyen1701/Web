@@ -27,7 +27,7 @@ h3 {
 }
 
 h1 {
-    text-size-adjust: 7rem;
+    font-size: 6rem;
 }
 
 h2 {
@@ -601,6 +601,7 @@ a {
 }
 
 /* Navigation Bar */
+/* Nav bar is done, but it's need to be improved */
 .nav {
     align-items: center;
     background: black;
@@ -660,5 +661,22 @@ a {
 
     .nav__item{
         border: 0;
+    }
+}
+
+/* Hero */  
+
+.hero__tagline{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    .hero{
+
     }
 }
