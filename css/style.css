@@ -192,7 +192,7 @@ a {
     white-space: nowrap;
 }
 
-.btn .icon{
+.btn .icon {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
@@ -275,7 +275,6 @@ a {
 .card {
     border-radius: 10px;
     box-shadow: 0 0 10px 0 lightgrey;
-    margin: 10px;
     /* need to be changed to 0 when combing all components together */
     overflow: hidden;
 }
@@ -309,6 +308,9 @@ a {
 }
 
 /* Plan */
+.plan {
+    transition: transform .2 ease-out;
+}
 
 .plan__title {
     color: white;
@@ -344,6 +346,10 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan--popular {
+    transform: scale(1.1);
+}
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -355,6 +361,14 @@ a {
     right: 5%;
     top: -6px;
     width: 40px;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -626,37 +640,37 @@ a {
     border-bottom: 1px solid #222;
 }
 
-.nav__item > a {
+.nav__item>a {
     color: #d2d0db;
     transition: color 0.3s;
 }
 
-.nav__item > a:hover{
+.nav__item>a:hover {
     color: #fff;
 }
 
-.nav__toggle{
+.nav__toggle {
     opacity: .5;
     cursor: pointer;
     transition: box-shadow 0.2s;
 }
 
-.nav.collapsible--expanded .nav__toggle{
+.nav.collapsible--expanded .nav__toggle {
     opacity: 1;
     box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
 }
 
-.nav__logo{
+.nav__logo {
     transform: translateY(5px);
 }
 
-@media screen and (min-width: 768px){
-    .nav__toggle{
+@media screen and (min-width: 768px) {
+    .nav__toggle {
         display: none;
     }
 
-    .nav__list{
+    .nav__list {
         width: auto;
         display: flex;
         font-size: 1.6rem;
@@ -664,14 +678,14 @@ a {
         opacity: 1;
     }
 
-    .nav__item{
+    .nav__item {
         border: 0;
     }
 }
 
 /* Hero */
 
-.hero__tagline{
+.hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
     letter-spacing: 1px;
@@ -679,29 +693,30 @@ a {
     margin-bottom: 5rem;
 }
 
-.hero__image{
+.hero__image {
     width: 100%;
 }
 
-@media screen and (min-width: 768px){
-    .hero{
+@media screen and (min-width: 768px) {
+    .hero {
         padding-top: 0;
     }
-    .hero__content{
+
+    .hero__content {
         text-align: left;
         align-self: center;
     }
 }
 
 /* Domain block */
-.block-domain .input-group{
+.block-domain .input-group {
     box-shadow: 0 0 40px 5px #e6ebee;
     border: 0;
     margin: 4rem auto;
     max-width: 670px;
 }
 
-.block-domain__prices{
+.block-domain__prices {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 6rem);
@@ -712,9 +727,18 @@ a {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 768px){
-    .block-domain__prices{
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
 
+/* plans block */
+.block-plans .grid {
+    grid-gap: 8rem 4rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
 }
