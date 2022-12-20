@@ -8,6 +8,11 @@
 }
 
 /* Typography */
+::selection{
+    background-color: var(--color-primary);
+    color: white;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -37,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 p {
@@ -122,7 +128,6 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-heading);
 }
 
 .list--inline .list--item {
@@ -134,6 +139,7 @@ a {
     list-style-image: url(/images/tick.svg);
     ;
     padding-left: 3rem;
+    color: var(--color-heading);
 }
 
 .list--check .list--item {
@@ -148,16 +154,16 @@ a {
 }
 
 /* Icon */
-.icon {
+.icon, .media__snap{
     width: 30px;
     height: 30px;
 }
 
-.icon--primary {
+.icon--primary, media__snap {
     fill: var(--color-primary);
 }
 
-.icon--white {
+.icon--white{
     fill: white;
 }
 
@@ -398,6 +404,7 @@ a {
 /* media */
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -774,8 +781,17 @@ a {
     width: 100%;
 }
 
+.block-showcase__img-container{
+    justify-self: end;
+}
+
 @media screen and (min-width: 768px){
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+
     .block-showcase__img{
         width: auto;
+        max-width: 700px;
     }
 }

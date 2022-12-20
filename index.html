@@ -21,11 +21,56 @@
             <h2>User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-            <img class="block-showcase__img" src="images/ipad.png" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias corporis consequatur iusto doloremque
-                quasi, omnis eveniet asperiores neque. Nesciunt, quo.</p>
+            <picture class="block-showcase__img-container">
+                <source type="images/webp" srcset="images/ipad.webp 1x, images/ipad@wx.webp 2x">
+                <source type="images/png" srcset="images/ipad.png 1x, images/ipad@wx.png 2x">
+                <img class="block-showcase__img" src="images/ipad.png" alt="">
+            </picture>
+            <ul class="list">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <img class="media__snap" src="images/snap.svg" alt="">
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start & Managed Updates</h3>
+                            <p class="media__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic neque adipisci magnam quas sed. Unde fugit
+                                explicabo rem dolorem! Ab.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <use xlink:href="/images/sprite.svg#growth"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                            <p class="media__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic neque adipisci magnam quas sed. Unde fugit
+                                explicabo rem dolorem! Ab.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <use xlink:href="/images/sprite.svg#wordpress"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Dynamic Caching & More</h3>
+                            <p class="media__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic neque adipisci magnam quas sed. Unde fugit
+                                explicabo rem dolorem! Ab.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
     <script src="js/main.js"></script>
 </body>
 
