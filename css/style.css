@@ -192,7 +192,7 @@ a {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vh;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -265,6 +265,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1;
+    width: 0;
 }
 
 .input-group .btn {
@@ -592,6 +593,7 @@ a {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -726,8 +728,9 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     font-size: 2rem;
@@ -793,5 +796,83 @@ a {
     .block-showcase__img{
         width: auto;
         max-width: 700px;
+    }
+}
+
+/* footer */
+.footer{
+    background: #232323;
+    padding: 2rem;
+}
+
+.footer a{
+    color: #777;
+    transition: color 0.3s;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+.footer__section{
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__section .list{
+    margin: 1rem 0;
+}
+
+.footer__heading{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer__brand{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__brand img{
+    /* Need to improved */
+    width: 100%;
+    max-width: 230px;
+}
+
+.footer__copyright{
+    font-size: 2.1rem;
+    color: white;
+    opacity: .3;
+}
+
+@media screen and (min-width: 768px){
+    .footer__sections{
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    }
+
+    .footer .collapsible__chevron{
+        display: none;
+    }
+
+    .footer .collapsible__content{
+        opacity: 1;
+        max-height: 100%;
+    }   
+
+    .footer__brand{
+        order: -1;
+        margin-top: 1rem;
+    }
+
+    .footer__copyright{
+        font-size: 1rem;
+    }
+
+    .footer__section{
+        border: 0;
+    }
+
+    .footer__heading{
+        font-size: 1.6rem;
     }
 }
