@@ -272,7 +272,7 @@ a {
     margin: 4px;
 }
 
-@media screen and(min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .input-group .input {
         font-size: 1.5rem;
     }
@@ -316,13 +316,13 @@ a {
 
 /* Plan */
 .plan {
-    transition: transform .2 ease-out;
+    transition: transform .2s ease-out;
 }
 
 .plan__title {
     color: white;
     margin: 0;
-    size: 2.4rem;
+    font-size: 2.4rem;
 }
 
 .plan__price {
